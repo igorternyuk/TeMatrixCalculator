@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>797</width>
+    <height>503</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Матричный калькулятор</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QSplitter" name="splitter">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <widget class="QWidget" name="">
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QTableView" name="tableViewA">
+         <attribute name="horizontalHeaderDefaultSectionSize">
+          <number>50</number>
+         </attribute>
+        </widget>
+       </item>
+       <item>
+        <layout class="QFormLayout" name="formLayout">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label">
+           <property name="text">
+            <string>Количество строк</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QSpinBox" name="spinBoxRowNumberA"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QFormLayout" name="formLayout_2">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_2">
+           <property name="text">
+            <string>Количество столбцов</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QSpinBox" name="spinBoxColumnNumberA"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QFormLayout" name="formLayout_3">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_3">
+           <property name="text">
+            <string>Скаляр</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QDoubleSpinBox" name="doubleSpinBoxScalarA">
+           <property name="minimum">
+            <double>-99999999999.000000000000000</double>
+           </property>
+           <property name="maximum">
+            <double>99999999999.000000000000000</double>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QFormLayout" name="formLayout_4">
+         <item row="0" column="0">
+          <widget class="QComboBox" name="comboBoxA">
+           <item>
+            <property name="text">
+             <string>Транспонировать</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Обратить</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Возвести в степень</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Инкрементировать</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Декрементировать</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Умножить на скаляр</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Разделить на скаляр</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Детерминант</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Ранг</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QPushButton" name="pushButtonA">
+           <property name="text">
+            <string>Расчет</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QTableView" name="tableViewA2">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <attribute name="horizontalHeaderDefaultSectionSize">
+          <number>50</number>
+         </attribute>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="">
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QTableView" name="tableViewB">
+         <attribute name="horizontalHeaderDefaultSectionSize">
+          <number>50</number>
+         </attribute>
+        </widget>
+       </item>
+       <item>
+        <layout class="QFormLayout" name="formLayout_5">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_6">
+           <property name="text">
+            <string>Количество строк</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QSpinBox" name="spinBoxRowNumberB"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QFormLayout" name="formLayout_6">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_4">
+           <property name="text">
+            <string>Количество столбцов</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QSpinBox" name="spinBoxColumnNumberB"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QFormLayout" name="formLayout_7">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_5">
+           <property name="text">
+            <string>Скаляр</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QDoubleSpinBox" name="doubleSpinBoxScalarB"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QFormLayout" name="formLayout_8">
+         <item row="0" column="0">
+          <widget class="QComboBox" name="comboBoxB">
+           <item>
+            <property name="text">
+             <string>Транспонировать</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Обратить</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Возвести в степень</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Инкрементировать</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Декрементировать</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Умножить на скаляр</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Разделить на скаляр</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Детерминант</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Ранг</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QPushButton" name="pushButtonB">
+           <property name="text">
+            <string>Расчет</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QTableView" name="tableViewB2">
+         <attribute name="horizontalHeaderDefaultSectionSize">
+          <number>50</number>
+         </attribute>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="">
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QTableView" name="tableViewR">
+         <attribute name="horizontalHeaderDefaultSectionSize">
+          <number>50</number>
+         </attribute>
+        </widget>
+       </item>
+       <item>
+        <layout class="QFormLayout" name="formLayout_11">
+         <item row="0" column="0">
+          <widget class="QComboBox" name="comboBoxBinaryOperation">
+           <item>
+            <property name="text">
+             <string>Сложить</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Вычесть</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Умножить</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QPushButton" name="pushButtonCalculate">
+           <property name="text">
+            <string>Расчет</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButtonExit">
+         <property name="text">
+          <string>Выйти из приложения</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QFormLayout" name="formLayout_9">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_8">
+           <property name="text">
+            <string>Скаляр</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QDoubleSpinBox" name="doubleSpinBoxScalarR"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QFormLayout" name="formLayout_10">
+         <item row="0" column="0">
+          <widget class="QComboBox" name="comboBoxR">
+           <item>
+            <property name="text">
+             <string>Транспонировать</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Обратить</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Возвести в степень</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Инкрементировать</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Декрементировать</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Умножить на скаляр</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Разделить на скаляр</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Детерминант</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Ранг</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QPushButton" name="pushButtonR">
+           <property name="text">
+            <string>Расчет</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QTableView" name="tableViewR2">
+         <attribute name="horizontalHeaderDefaultSectionSize">
+          <number>50</number>
+         </attribute>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
