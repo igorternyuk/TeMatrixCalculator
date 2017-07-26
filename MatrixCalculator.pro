@@ -16,12 +16,11 @@ DEFINES -= DEBUG
 SOURCES += main.cpp\
         widget.cpp \
     doublespinboxdelegate.cpp \
-    matrix_error.cpp
+    matrix.cpp
 
 HEADERS  += widget.h \
     matrix.h \
-    doublespinboxdelegate.h \
-    matrix_error.h
+    doublespinboxdelegate.h
 
 FORMS    += widget.ui
 
